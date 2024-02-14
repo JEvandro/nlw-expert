@@ -111,9 +111,11 @@ const questions = [
         const iscorrect = event.target.value == item.correct
   
         corrects.delete(item)
+        
         if(iscorrect){
           corrects.add(item)
         }
+        
         showRate.textContent = corrects.size + ' de ' + numQuestion
   
       }
